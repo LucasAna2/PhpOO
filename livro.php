@@ -1,5 +1,5 @@
 <?php
-    class livro{
+    class Livro{
         private $titulo;
         private $ano;
         private $autor;
@@ -28,7 +28,7 @@
         public function setAutor($argAutor){
             $this->autor = $argAutor;
         }
-        
+
         public function getEdicao(){
             return $this->edicao;
         }
@@ -38,7 +38,7 @@
         }
 
         public function imprimir(){
-            echo "<strong>LIVRO</strong> <br/>Título: " . $this->titulo . "<br/>Autor: " . $this->autor . 
-            "<br/>Edição: " . $this->edicao . "<br/>Ano: " . $this->ano;  
+            echo "<strong>LIVRO</strong> <br/>Título: " . $this->getTitulo() . "<br/>Autor: " . $this->getAutor() .
+            "<br/>Edição: " . $this->getEdicao() . "<br/>Ano: " . $this->getAno();
         }
     }

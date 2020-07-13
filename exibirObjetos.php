@@ -1,11 +1,11 @@
 <?php
-    require_once 'pessoa.php';
-    require_once 'carro.php';
-    require_once 'livro.php';
+    require_once 'Pessoa.php';
+    require_once 'Carro.php';
+    require_once 'Livro.php';
 
-    $pessoa1 = new pessoa();
-    $carro1 = new carro();
-    $livro1 = new livro();
+    $pessoa1 = new Pessoa();
+    $carro1 = new Carro();
+    $livro1 = new Livro();
 
     $pessoa1->setNome("João");
     $pessoa1->setSexo("Masculino");
