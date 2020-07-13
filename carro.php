@@ -1,5 +1,5 @@
 <?php
-    class carro{
+    class Carro{
         private $marca;
         private $cor;
         private $placa;
@@ -28,7 +28,7 @@
         public function setPlaca($argPlaca){
             $this->placa = $argPlaca;
         }
-        
+
         public function getModelo(){
             return $this->modelo;
         }
@@ -38,7 +38,7 @@
         }
 
         public function imprimir(){
-            echo "<strong>CARRO</strong> <br/>Marca: " . $this->marca . "<br/>Modelo: " . $this->modelo . 
-            "<br/>Cor: " . $this->cor . "<br/>Placa: " . $this->placa;  
+            echo "<strong>CARRO</strong> <br/>Marca: " . $this->getMarca() . "<br/>Modelo: " . $this->getModelo() .
+            "<br/>Cor: " . $this->getCor() . "<br/>Placa: " . $this->getPlaca();
         }
     }

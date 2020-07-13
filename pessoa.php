@@ -1,5 +1,5 @@
 <?php
-    class pessoa{
+    class Pessoa{
         private $nome;
         private $idade;
         private $peso;
@@ -28,7 +28,7 @@
         public function setPeso($argPeso){
             $this->peso = $argPeso;
         }
-        
+
         public function getSexo(){
             return $this->sexo;
         }
@@ -38,7 +38,7 @@
         }
 
         public function imprimir(){
-            echo "<strong>PESSOA</strong> <br/>Nome: " . $this->nome . "<br/>Sexo: " . $this->sexo . 
-            "<br/>Idade: " . $this->idade . " anos <br/>Peso: " . $this->peso . "Kg";  
+            echo "<strong>PESSOA</strong> <br/>Nome: " . $this->getNome() . "<br/>Sexo: " . $this->getSexo() .
+            "<br/>Idade: " . $this->getIdade() . " anos <br/>Peso: " . $this->getPeso() . "Kg";
         }
     }
